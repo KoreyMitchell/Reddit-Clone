@@ -6,7 +6,15 @@
 // PASTE FIREBASE HERE:
 export const environment = {
   production: false,
-  // PASTE FIREBASE HERE:
+  firebaseConfig : {
+    apiKey: "AIzaSyCtWejO8vDBjaCeeyrgaEds6bnaYHGElZs",
+    authDomain: "redditcloneproj-ae2b4.firebaseapp.com",
+    databaseURL: "https://redditcloneproj-ae2b4.firebaseio.com",
+    projectId: "redditcloneproj-ae2b4",
+    storageBucket: "redditcloneproj-ae2b4.appspot.com",
+    messagingSenderId: "224055038964",
+    appId: "1:224055038964:web:39cd888ce29f9750cf1fa1"
+  }
   
 };
 
