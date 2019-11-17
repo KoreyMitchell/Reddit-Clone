@@ -1,4 +1,6 @@
-<h1 *ngIf="authenticationService.userData | async">Hello {{ (authenticationService.userData | async)?.email }}</h1>
+<h1 *ngIf="authenticationService.userData | async">Hello {{ (authenticationService.userData | async)?.email }}
+    <button [routerLink]="['/home']" routerLinkActive="active" mat-raised-button color="primary">Continue to feed</button>
+</h1>
 
 <div *ngIf="!(authenticationService.userData | async)">
     <input type="text" [(ngModel)]="email" placeholder="email">
@@ -10,3 +12,5 @@
 </div>
 
 <button (click)="signOut()" *ngIf="authenticationService.userData | async">Logout</button>
+
+<router-outlet></router-outlet>
